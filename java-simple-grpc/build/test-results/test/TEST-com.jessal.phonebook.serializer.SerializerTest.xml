@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jessal.phonebook.serializer.SerializerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-27T19:02:07" hostname="g14" time="0.183">
+  <properties/>
+  <testcase name="writeToFilePerson()" classname="com.jessal.phonebook.serializer.SerializerTest" time="0.059"/>
+  <testcase name="writeToFilePersonJson()" classname="com.jessal.phonebook.serializer.SerializerTest" time="0.119"/>
+  <testcase name="readFromFilePerson()" classname="com.jessal.phonebook.serializer.SerializerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

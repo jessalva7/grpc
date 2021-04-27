@@ -6,7 +6,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.36.1)",
-    comments = "Source: person.proto")
+    comments = "Source: person_service.proto")
 public final class PersonServiceGrpc {
 
   private PersonServiceGrpc() {}
@@ -14,29 +14,29 @@ public final class PersonServiceGrpc {
   public static final String SERVICE_NAME = "jessal.phonebook.PersonService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonResponse,
-      com.jessal.phonebook.pb.AddPersonRequest> getAddPersonMethod;
+  private static volatile io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonRequest,
+      com.jessal.phonebook.pb.AddPersonResponse> getAddPersonMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "addPerson",
-      requestType = com.jessal.phonebook.pb.AddPersonResponse.class,
-      responseType = com.jessal.phonebook.pb.AddPersonRequest.class,
+      requestType = com.jessal.phonebook.pb.AddPersonRequest.class,
+      responseType = com.jessal.phonebook.pb.AddPersonResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonResponse,
-      com.jessal.phonebook.pb.AddPersonRequest> getAddPersonMethod() {
-    io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonResponse, com.jessal.phonebook.pb.AddPersonRequest> getAddPersonMethod;
+  public static io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonRequest,
+      com.jessal.phonebook.pb.AddPersonResponse> getAddPersonMethod() {
+    io.grpc.MethodDescriptor<com.jessal.phonebook.pb.AddPersonRequest, com.jessal.phonebook.pb.AddPersonResponse> getAddPersonMethod;
     if ((getAddPersonMethod = PersonServiceGrpc.getAddPersonMethod) == null) {
       synchronized (PersonServiceGrpc.class) {
         if ((getAddPersonMethod = PersonServiceGrpc.getAddPersonMethod) == null) {
           PersonServiceGrpc.getAddPersonMethod = getAddPersonMethod =
-              io.grpc.MethodDescriptor.<com.jessal.phonebook.pb.AddPersonResponse, com.jessal.phonebook.pb.AddPersonRequest>newBuilder()
+              io.grpc.MethodDescriptor.<com.jessal.phonebook.pb.AddPersonRequest, com.jessal.phonebook.pb.AddPersonResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "addPerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.jessal.phonebook.pb.AddPersonResponse.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.jessal.phonebook.pb.AddPersonRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.jessal.phonebook.pb.AddPersonResponse.getDefaultInstance()))
               .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("addPerson"))
               .build();
         }
@@ -95,8 +95,8 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void addPerson(com.jessal.phonebook.pb.AddPersonResponse request,
-        io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonRequest> responseObserver) {
+    public void addPerson(com.jessal.phonebook.pb.AddPersonRequest request,
+        io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAddPersonMethod(), responseObserver);
     }
 
@@ -106,8 +106,8 @@ public final class PersonServiceGrpc {
             getAddPersonMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.jessal.phonebook.pb.AddPersonResponse,
-                com.jessal.phonebook.pb.AddPersonRequest>(
+                com.jessal.phonebook.pb.AddPersonRequest,
+                com.jessal.phonebook.pb.AddPersonResponse>(
                   this, METHODID_ADD_PERSON)))
           .build();
     }
@@ -129,8 +129,8 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public void addPerson(com.jessal.phonebook.pb.AddPersonResponse request,
-        io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonRequest> responseObserver) {
+    public void addPerson(com.jessal.phonebook.pb.AddPersonRequest request,
+        io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAddPersonMethod(), getCallOptions()), request, responseObserver);
     }
@@ -152,7 +152,7 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public com.jessal.phonebook.pb.AddPersonRequest addPerson(com.jessal.phonebook.pb.AddPersonResponse request) {
+    public com.jessal.phonebook.pb.AddPersonResponse addPerson(com.jessal.phonebook.pb.AddPersonRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAddPersonMethod(), getCallOptions(), request);
     }
@@ -174,8 +174,8 @@ public final class PersonServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.jessal.phonebook.pb.AddPersonRequest> addPerson(
-        com.jessal.phonebook.pb.AddPersonResponse request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.jessal.phonebook.pb.AddPersonResponse> addPerson(
+        com.jessal.phonebook.pb.AddPersonRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAddPersonMethod(), getCallOptions()), request);
     }
@@ -201,8 +201,8 @@ public final class PersonServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_ADD_PERSON:
-          serviceImpl.addPerson((com.jessal.phonebook.pb.AddPersonResponse) request,
-              (io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonRequest>) responseObserver);
+          serviceImpl.addPerson((com.jessal.phonebook.pb.AddPersonRequest) request,
+              (io.grpc.stub.StreamObserver<com.jessal.phonebook.pb.AddPersonResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -226,7 +226,7 @@ public final class PersonServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.jessal.phonebook.pb.PersonOuterClass.getDescriptor();
+      return com.jessal.phonebook.pb.PersonServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override

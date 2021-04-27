@@ -24,19 +24,3 @@ message Person {
 message AddressBook {
   repeated Person people = 1;
 }
-
-message AddPersonRequest {
-  Person person = 1;
-}
-
-
-message AddPersonResponse {
-  Person person = 1;
-}
-
-service PersonService{
-
-  rpc  addPerson(AddPersonResponse) returns (AddPersonRequest);
-
-
-}

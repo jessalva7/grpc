@@ -29,16 +29,6 @@ public final class PersonOuterClass {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_jessal_phonebook_AddressBook_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_jessal_phonebook_AddPersonRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_jessal_phonebook_AddPersonRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_jessal_phonebook_AddPersonResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_jessal_phonebook_AddPersonResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -56,13 +46,7 @@ public final class PersonOuterClass {
       "ok.Person.PhoneType\"+\n\tPhoneType\022\n\n\006MOBI" +
       "LE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\"7\n\013AddressBook\022" +
       "(\n\006people\030\001 \003(\0132\030.jessal.phonebook.Perso" +
-      "n\"<\n\020AddPersonRequest\022(\n\006person\030\001 \001(\0132\030." +
-      "jessal.phonebook.Person\"=\n\021AddPersonResp" +
-      "onse\022(\n\006person\030\001 \001(\0132\030.jessal.phonebook." +
-      "Person2e\n\rPersonService\022T\n\taddPerson\022#.j" +
-      "essal.phonebook.AddPersonResponse\032\".jess" +
-      "al.phonebook.AddPersonRequestB\033\n\027com.jes" +
-      "sal.phonebook.pbP\001b\006proto3"
+      "nB\033\n\027com.jessal.phonebook.pbP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -86,18 +70,6 @@ public final class PersonOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_jessal_phonebook_AddressBook_descriptor,
         new java.lang.String[] { "People", });
-    internal_static_jessal_phonebook_AddPersonRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
-    internal_static_jessal_phonebook_AddPersonRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_jessal_phonebook_AddPersonRequest_descriptor,
-        new java.lang.String[] { "Person", });
-    internal_static_jessal_phonebook_AddPersonResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
-    internal_static_jessal_phonebook_AddPersonResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_jessal_phonebook_AddPersonResponse_descriptor,
-        new java.lang.String[] { "Person", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

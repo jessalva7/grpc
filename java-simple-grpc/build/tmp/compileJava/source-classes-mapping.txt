@@ -1,23 +1,54 @@
-com/jessal/phonebook/pb/PersonOrBuilder.java
- com.jessal.phonebook.pb.PersonOrBuilder
 com/jessal/phonebook/pb/AddressBookOrBuilder.java
  com.jessal.phonebook.pb.AddressBookOrBuilder
 com/jessal/phonebook/pb/AddPersonResponseOrBuilder.java
  com.jessal.phonebook.pb.AddPersonResponseOrBuilder
+com/jessal/phonebook/repository/PhoneInMemoryDataStore.java
+ com.jessal.phonebook.repository.PhoneInMemoryDataStore
+com/jessal/phonebook/repository/PersonInMemoryDataStoreImpl.java
+ com.jessal.phonebook.repository.PersonInMemoryDataStoreImpl
+com/jessal/phonebook/sample/Generator.java
+ com.jessal.phonebook.sample.Generator
+com/jessal/phonebook/repository/PersonInMemoryDataStore.java
+ com.jessal.phonebook.repository.PersonInMemoryDataStore
+com/jessal/phonebook/repository/PhoneType.java
+ com.jessal.phonebook.repository.PhoneType
+com/jessal/phonebook/pb/AddPersonRequestOrBuilder.java
+ com.jessal.phonebook.pb.AddPersonRequestOrBuilder
+com/jessal/phonebook/repository/PhoneInMemoryDataStoreImpl.java
+ com.jessal.phonebook.repository.PhoneInMemoryDataStoreImpl
+com/jessal/phonebook/util/Mapper.java
+ com.jessal.phonebook.util.Mapper
+com/jessal/phonebook/repository/PersonEntity.java
+ com.jessal.phonebook.repository.PersonEntity
+com/jessal/phonebook/pb/PersonServiceGrpc.java
+ com.jessal.phonebook.pb.PersonServiceGrpc
+ com.jessal.phonebook.pb.PersonServiceGrpc$1
+ com.jessal.phonebook.pb.PersonServiceGrpc$2
+ com.jessal.phonebook.pb.PersonServiceGrpc$3
+ com.jessal.phonebook.pb.PersonServiceGrpc$MethodHandlers
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceBaseDescriptorSupplier
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceBlockingStub
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceFileDescriptorSupplier
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceFutureStub
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceImplBase
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceMethodDescriptorSupplier
+ com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceStub
+com/jessal/phonebook/util/AlreadyExistException.java
+ com.jessal.phonebook.util.AlreadyExistException
+com/jessal/phonebook/pb/PersonOrBuilder.java
+ com.jessal.phonebook.pb.PersonOrBuilder
 com/jessal/phonebook/pb/AddPersonResponse.java
  com.jessal.phonebook.pb.AddPersonResponse
  com.jessal.phonebook.pb.AddPersonResponse$1
  com.jessal.phonebook.pb.AddPersonResponse$Builder
-com/jessal/phonebook/sample/Generator.java
- com.jessal.phonebook.sample.Generator
-com/jessal/phonebook/service/PersonService.java
- com.jessal.phonebook.service.PersonService
-com/jessal/phonebook/pb/AddPersonRequestOrBuilder.java
- com.jessal.phonebook.pb.AddPersonRequestOrBuilder
+com/jessal/phonebook/repository/PhoneNumberEntity.java
+ com.jessal.phonebook.repository.PhoneNumberEntity
 com/jessal/phonebook/pb/AddPersonRequest.java
  com.jessal.phonebook.pb.AddPersonRequest
  com.jessal.phonebook.pb.AddPersonRequest$1
  com.jessal.phonebook.pb.AddPersonRequest$Builder
+com/jessal/phonebook/pb/PersonServiceOuterClass.java
+ com.jessal.phonebook.pb.PersonServiceOuterClass
 com/jessal/phonebook/pb/AddressBook.java
  com.jessal.phonebook.pb.AddressBook
  com.jessal.phonebook.pb.AddressBook$1
@@ -34,16 +65,10 @@ com/jessal/phonebook/pb/Person.java
  com.jessal.phonebook.pb.Person$PhoneType$1
 com/jessal/phonebook/pb/PersonOuterClass.java
  com.jessal.phonebook.pb.PersonOuterClass
-com/jessal/phonebook/pb/PersonServiceGrpc.java
- com.jessal.phonebook.pb.PersonServiceGrpc
- com.jessal.phonebook.pb.PersonServiceGrpc$1
- com.jessal.phonebook.pb.PersonServiceGrpc$2
- com.jessal.phonebook.pb.PersonServiceGrpc$3
- com.jessal.phonebook.pb.PersonServiceGrpc$MethodHandlers
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceBaseDescriptorSupplier
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceBlockingStub
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceFileDescriptorSupplier
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceFutureStub
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceImplBase
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceMethodDescriptorSupplier
- com.jessal.phonebook.pb.PersonServiceGrpc$PersonServiceStub
+com/jessal/phonebook/serializer/Serializer.java
+ com.jessal.phonebook.serializer.Serializer
+com/jessal/phonebook/service/PersonService.java
+ com.jessal.phonebook.service.PersonService
+com/jessal/phonebook/ContactsServer.java
+ com.jessal.phonebook.ContactsServer
+ com.jessal.phonebook.ContactsServer$1

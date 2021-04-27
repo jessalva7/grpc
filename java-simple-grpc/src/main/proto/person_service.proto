@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package jessal.phonebook;
+
+option java_package="com.jessal.phonebook.pb";
+option java_multiple_files=true;
+
+import "person.proto";
+
+message AddPersonRequest {
+  Person person = 1;
+}
+
+
+message AddPersonResponse {
+  Person person = 1;
+}
+
+service PersonService{
+
+  rpc  addPerson(AddPersonRequest) returns (AddPersonResponse);
+
+
+}

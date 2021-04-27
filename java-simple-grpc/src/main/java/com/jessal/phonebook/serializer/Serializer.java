@@ -1,6 +1,8 @@
 package com.jessal.phonebook.serializer;
 
+import com.google.protobuf.util.JsonFormat;
 import com.jessal.phonebook.pb.Person;
+import com.jessal.phonebook.sample.Generator;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,6 +25,16 @@ public class Serializer {
         Person person = Person.parseFrom(fileInputStream.readAllBytes());
         fileInputStream.close();
         return  person;
+
+    }
+
+    void writeToFilePersonJson(Person person, String filename ) throws IOException {
+
+        JsonFormat.Printer printer = JsonFormat.printer().includingDefaultValueFields().preservingProtoFieldNames();
+
+        FileOutputStream fileOutputStream = new FileOutputStream(filename);
+        fileOutputStream.write( printer.print( person ).getBytes() );
+        fileOutputStream.close();
 
     }
 
